@@ -1,0 +1,95 @@
+{
+  "name": "RPAChallenge_REFrameWorkProject",
+  "projectId": "5b91ee51-b5a8-43c3-9f61-6fed6d26f403",
+  "description": "This is an RPA Challenge project focused on automating the entry of personal details into the RPA Challenge website. The automation process retrieves data from an Excel file and inputs it into the web form dynamically.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.0.1]",
+    "UiPath.System.Activities": "25.2.4",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.12]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "02e6ced9-d09f-486e-a4a8-6e399c2b7737",
+        "dataVariationFilePath": ".variations\\challenge_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4795473a-1e0d-4571-97f7-d7f4de52872f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ReadInputFileTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f5b77faa-a0fc-4769-be05-d9f07798ba92",
+        "testCaseType": "TestCase",
+        "fileName": "Framework\\CodedTestCase.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ffdf56a0-ae30-4c7b-9512-d195cb380520",
+        "testCaseType": "TestCase",
+        "fileName": "Framework\\KillAllProcesses.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e0cd28b7-a225-4b8b-8f00-a7766e918307",
+        "testCaseType": "TestCase",
+        "fileName": "Framework\\ReadInputFileRPAChallenge.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "cbd96767-c87d-4376-9d43-db46da6b5280",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
